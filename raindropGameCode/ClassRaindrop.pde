@@ -1,5 +1,5 @@
 class Raindrop {
-  PVector loc, vel, acc, mouse;
+  PVector loc, vel, acc, input;
   int diam;
   
  
@@ -18,7 +18,7 @@ class Raindrop {
     vel = new PVector(-1, 1);
     acc = new PVector(0, .1);
     diam = 20;
-    mouse = new PVector();
+    input = new PVector();
   }
   
   void display(){
@@ -32,22 +32,26 @@ class Raindrop {
   }
   
   
-  
+/*  
   void reset(){
     loc = new PVector(random(width), 0);
   }
  
   
   boolean isInContactWith(PVector tLoc){
-    tLoc = mouse;
-    mouse.set(mouseX, mouseY);
-    if(mouse.dist(loc) < diam/2){
-      println("please work");
+    tLoc = input;
+    input.set(mouseX, mouseY);
+    if(input.dist(loc) < diam/2){
+      return true;
+    } else {
+      return false;
     }
-    return true;
+    
+
     
   }
   
+  */
   
   
 }
