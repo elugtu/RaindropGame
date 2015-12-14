@@ -31,24 +31,23 @@ class Raindrop {
     vel.add(acc);
   }
   
-  /*
+  
   
   void reset(){
     loc = new PVector(random(width), 0);
   }
-  */
+ 
   
-  /*
   boolean isInContactWith(PVector tLoc){
     tLoc = mouse;
     mouse.set(mouseX, mouseY);
     if(mouse.dist(loc) < diam/2){
-      reset();
+      println("please work");
     }
-    
     return true;
+    
   }
   
-  */
+  
   
 }
