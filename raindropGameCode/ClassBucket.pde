@@ -6,7 +6,7 @@ class Bucket{
  Bucket(int tDiam){
    diam = tDiam;
    loc = new PVector(mouseX, mouseY);
-   c = color(0);
+   c = color(130);
  }
   
  void display(){

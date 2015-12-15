@@ -40,10 +40,8 @@ class Raindrop {
   }
  
   
-  boolean isInContactWith(PVector tLoc){
-    tLoc = input;
-    input.set(mouseX, mouseY);
-    if(input.dist(loc) < diam/2){
+  boolean isInContactWith(Bucket b){
+    if(loc.dist(b.loc) < diam/2 + b.diam/2){
       println("it touch");
       return true;
     } else {
