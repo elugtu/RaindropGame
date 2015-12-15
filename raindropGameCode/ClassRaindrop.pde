@@ -22,6 +22,7 @@ class Raindrop {
   }
   
   void display(){
+    fill(30, 240, 100);
     noStroke();
     ellipse(loc.x, loc.y, diam, diam);
   }
