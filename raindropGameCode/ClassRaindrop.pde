@@ -16,7 +16,7 @@ class Raindrop {
   Raindrop(float tX, float tY){
     loc = new PVector(tX, tY);
     vel = new PVector(-1, 1);
-    acc = new PVector(0, .1);
+    acc = new PVector(0, .05);
     diam = 20;
     input = new PVector();
   }
@@ -32,9 +32,10 @@ class Raindrop {
   }
   
   
-/*  
+ 
   void reset(){
     loc = new PVector(random(width), 0);
+    vel = new PVector(0, 0);
   }
  
   
@@ -42,6 +43,7 @@ class Raindrop {
     tLoc = input;
     input.set(mouseX, mouseY);
     if(input.dist(loc) < diam/2){
+      println("it touch");
       return true;
     } else {
       return false;
@@ -51,7 +53,7 @@ class Raindrop {
     
   }
   
-  */
+ 
   
   
 }
