@@ -41,7 +41,7 @@ class Raindrop {
  
   
   boolean isInContactWith(Bucket b){
-    if(loc.dist(b.loc) < diam/2 + b.diam/2){
+    if(loc.dist(b.loc) < diam/2 + b.diam/2){  //the distance between the loc PVector and the b.loc PVector (bucket b's loc) is less than the radius of a raindrop + the radius of bucket b
       println("it touch");
       return true;
     } else {
