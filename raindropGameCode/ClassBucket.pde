@@ -1,16 +1,18 @@
 class Bucket{
  int diam; 
  PVector loc;
- color c;
+ color empty; 
+ color full;
   
  Bucket(int tDiam){
    diam = tDiam;
    loc = new PVector(mouseX, mouseY);
-   c = color(130);
+   empty = color(50, 50, 50);
+   full = color(0, 10, 255);
  }
   
  void display(){
-   fill(c);
+   fill(lerpColor(empty, full, fill/20));
    loc.set(mouseX, mouseY);
    ellipse(loc.x, loc.y, diam, diam);
  }

@@ -49,6 +49,7 @@ void draw() {
 
   if (time <= 0) {
     time = 0;
+    textSize(30);
     text("GAME OVER", width/2, 100);
   }
   
@@ -56,7 +57,7 @@ void draw() {
     text("Bucket full! Click to pour!", width/2, height/2 + 40);
   }
   
-  text(fill, width/2, height/2 + 60);
+  text(fill + "%", width/2, height/2 + 60);
   
 }
 
