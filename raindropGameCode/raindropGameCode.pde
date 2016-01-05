@@ -34,7 +34,6 @@ void draw() {
       raindrops.remove(i);
       score += 1;
       fill += 1;
-
       r.reset();       //if it is, reset the raindrop
     }
     if (r.loc.y > height + r.diam/2) {     //check to see if the raindrop goes below the bottom of the screen
