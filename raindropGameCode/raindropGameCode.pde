@@ -54,6 +54,7 @@ void draw() {
   }
   
   if (fill >= 100) {
+    textAlign(CENTER);
     text("Bucket full! Click to pour!", width/2, height/2 + 90);
   }
   
