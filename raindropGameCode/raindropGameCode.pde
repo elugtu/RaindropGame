@@ -54,7 +54,7 @@ void draw() {
   }
   
   if (fill >= 100) {
-    text("Bucket full! Click to pour!", width/2, height/2 + 40);
+    text("Bucket full! Click to pour!", width/2, height/2 + 90);
   }
   
   text(fill + "%", width/2, height/2 + 60);
